@@ -70,7 +70,7 @@ class NewVisitorTest(LiveServerTestCase):
 		#Francis gets his on unique url
 		francis_list_url = self.browser.current_url
 		self.assertRegex(francis_list_url, '/lists/.+')
-		self.assertNotEqual(francis_list_url, edit_list_url)
+		self.assertNotEqual(francis_list_url, edith_list_url)
 		
 		# Again there is no trace
 		page_text = self.browser.find_element_by_tag_name('body').text
